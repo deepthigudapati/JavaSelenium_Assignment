@@ -18,7 +18,7 @@ public class VehicleSearchTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(VehicleSearchTest.class);
 
     @Test
-    public void testVehicleProperties() throws IOException {
+    public void singleInputFileMatchingTest() throws IOException {
         logger.info("Starting Vehicle Property Validation Test");
 
         VehicleFileProcessor processor = new VehicleFileProcessor();
