@@ -11,9 +11,9 @@ This is a Selenium-based test automation framework designed to validate vehicle 
 ## How to Run
 
 - **Run Tests Locally**:  
-  Run the tests using Maven:  
+  Run specific tests using Maven:  
   ```bash
-  mvn clean test
+  mvn clean -Dtest=VehicleSearchTest
 By default, the tests run on Chrome. To run on a different browser, use the -Dbrowser parameter:
   mvn clean test -Dbrowser=firefox
 Supported browsers:
@@ -33,6 +33,7 @@ Run Tests for Multiple Input Files:
 The VehicleSearchMultipleFilesTest dynamically processes all input files in the src/test/resources/input_files/ directory.
 
 mvn clean test -Dtest=VehicleSearchMultipleFilesTest
+NOTE: Not able to run test cases in parallel as website is not allowing many requests.Parallel execution may need some changes.
 
 **Logging**
 Logs are generated for each test run:
